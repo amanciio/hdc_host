@@ -92,7 +92,7 @@ nav {
 }
 
 .services-container {
-    padding: 5rem 0;   
+    padding: 5rem 0;
 }
 
 .services-container ul {
@@ -206,7 +206,7 @@ nav {
     background-color: #F45C57;
 }
 
-.searchdomain-container{
+.searchdomain-container {
     background-color: #34454e;
     text-align: center;
     padding: 5rem 0;
@@ -261,7 +261,7 @@ nav {
     margin-bottom: 15px;
 }
 
-.contact-container p { 
+.contact-container p {
     font-size: 20px;
     margin-bottom: 40px;
 }
@@ -295,4 +295,76 @@ footer {
     text-align: center;
     font-weight: bold;
     margin: 50px 0 100px;
+}
+
+/* RESPONSIVIDADE */
+@media(max-width: 1100px) {
+    .plans-container {
+        width: 95%;
+    }
+
+    .plan {
+        margin: 0 5px;
+    }
+}
+
+@media(max-width: 900px) {
+    .main-banner p {
+        padding: 0 6rem;
+    }
+
+    .searchdomain-container {
+        padding: 2rem 4rem;
+    }
+}
+
+@media(max-width: 576px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar-items li {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .main-banner p{
+        padding: 0 2rem;
+    }
+
+    .services-container ul {
+        flex-direction: column;
+    }
+
+    .plans-container {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .plan {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .searchdomain-container h2{
+        font-size: 28px;
+    }
+
+    .searchdomain-container input[type="text"]{
+        width: 100%;
+    }
+
+    .contact-container {
+        padding: 3rem 2rem;
+    }
+
+    .contact-container input,
+    .contact-container textarea {
+        width: 100%;
+        margin: 10px 0;
+    }
 }
